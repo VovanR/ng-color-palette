@@ -1,0 +1,13 @@
+<div class="palette">
+    <span
+        ng-repeat="item in Palette.items"
+        class="palette__item"
+        ng-class="{
+            palette__item_state_selected: item.selected
+        }"
+        style="
+            background-color: {{ item.color }};
+            color: {{ item.color }};
+        "
+    ></span>
+</div>
